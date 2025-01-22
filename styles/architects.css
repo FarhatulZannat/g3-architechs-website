@@ -131,6 +131,56 @@
   }
 
 
+  /* facts cards style */
+  .fact-card{
+    border: 1px solid rgba(255, 144, 14, 1);
+    width: 200px;
+    height: 200px;  /*hight , width disi jate gap dite na hoi karon gap dile onno divice like 1440px na hoye 1850px er divice e abr different lagbe dekte tai card gular e hight,width set kore disi
+     */
+     border-radius: 8px;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+  }
+  .fact-number{
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-top: 2px;
+    margin-bottom: 5px;
+  }
+  .fact-name{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .facts-des{
+    width: 450px;
+  }
+
+
+  /* sponsors styles */
+  .sponsor-info{
+    max-width: 550px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .sponsor-companys{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .sponsor-companys img{
+    filter: grayscale(100%);
+  }
+  .sponsor-title{
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+
 
   @media screen and (max-width: 576px) {
     .navbar,
@@ -139,8 +189,13 @@
          flex-direction: column ;                  
     }  
 
-    .team-img-container{
+    .team-img-container {
         grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+      }
+    .facts-container , .sponsor-companys{
+        grid-template-columns: 1fr;
+        justify-items: center;
         gap: 20px;
       }
  }
