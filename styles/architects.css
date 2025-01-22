@@ -6,3 +6,141 @@
   font-weight: 400px;
   font-style: normal;
 }
+
+
+
+/* shared styles */
+.display-flex{
+    display: flex;
+  }
+
+  /* dark02 */
+.text-gray{
+    color: #424242;
+  }
+
+  /* dark03 */
+.text-light-gray{
+    color: #727272;
+  }
+
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+  .btn{
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600px;
+    font-size: 1.25rem;
+  }
+  main{
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  section{
+    margin-top: 110px;
+  }
+  .section-title{
+    color: rgba(19, 19, 19, 1);
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+
+
+
+  
+ 
+
+
+
+  /* navbar related style */
+
+  .navbar{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand{
+    font-weight: bold;
+     font-size: 2.8rem; /* 16px=1rem; so, 45=2.8rem or almost 3rem rem use korle different size er device e auto size hoi*/
+     
+  }
+  .nav-item{
+    list-style: none;  
+    margin-left: 30px;
+  }
+
+  .nav-link{
+    text-decoration: none;  
+    font-weight: 500;
+  }
+
+  .navbar, .banner{
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  /* banner styles */
+
+  .banner-content{
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .banner-title{
+    font-weight: bold;
+    font-size: 3.5rem;
+  }
+  .banner-img{
+    /* max-width: 1140px;
+    margin: 0 auto; */
+    width: 100%;
+  }
+
+  /* teams design */
+  .teams{
+    align-items: center;
+    gap: 50px;
+  }
+  .team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+  }
+  .team-img{
+    width: 300px;
+    height: 300px;
+  }
+  .team-featchure{
+    max-width: 450px;
+  }
+
+  #Quick{
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+  #Features{
+    color: rgba(255, 144, 14, 1);
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+
+
+  @media screen and (max-width: 576px) {
+    .navbar,
+    .nav-links, 
+    .teams{
+         flex-direction: column ;                  
+    }  
+
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+      }
+ }
